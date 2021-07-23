@@ -54,3 +54,15 @@
 #         print(i)
 #         break
 # print('%s секунд' % (time.time() - start))
+
+
+# 6. Найдите разность между суммой квадратов и квадратом суммы первых ста натуральных чисел.
+
+# sum_kvad = 0
+# summa = 0
+# for i in range(1, 101):
+#     sum_kvad += i**2
+#     summa += i
+# kvad_sum = summa**2
+# print('Квадрат суммы ', kvad_sum, ' , сумма квадратов ', sum_kvad)
+# print('Разница ', kvad_sum - sum_kvad)
