@@ -66,3 +66,26 @@
 # kvad_sum = summa**2
 # print('Квадрат суммы ', kvad_sum, ' , сумма квадратов ', sum_kvad)
 # print('Разница ', kvad_sum - sum_kvad)
+
+
+# 7. Какое число является 10001-м простым числом?
+
+# import time
+
+# start = time.time()
+# count = 0
+# check_number = 2
+# while count != 10001:
+#     checker = 0
+#     for i in range(2, check_number + 2):
+#         if checker < 2:
+#             if check_number % i == 0:
+#                 checker += 1
+#         else:
+#             break
+#     else:
+#         count += 1
+#     check_number += 1
+# else:
+#     print(check_number - 1, ' - время расчёта: ', round((time.time() - start), 2), 'c')
+
