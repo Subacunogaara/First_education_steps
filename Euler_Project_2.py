@@ -18,3 +18,45 @@
 #             else:
 #                 break
 #     else:
+
+
+
+# 10. Найдите сумму всех простых чисел меньше двух миллионов.
+
+# import time, multiprocessing
+
+# def counting(number, limit, queue):
+#     print(multiprocessing.current_process().name, ' -- Start')
+#     summa = 0
+#     while number < limit:
+#         d = 2
+#         while d**2 <= number and number % d != 0:
+#             d += 1
+#         if d**2 > number:
+#             summa += number
+#         number += 1
+#     else:
+#         queue.put(summa)
+#     print(multiprocessing.current_process().name, ' -- Finish')
+
+# if __name__ == '__main__':
+#     start = time.time()
+#     queue = multiprocessing.Queue()
+#     my_list = []
+#     process1 = multiprocessing.Process(target=counting, args=(2, 1000000, queue))
+#     process2 = multiprocessing.Process(target=counting, args=(1000000, 1500000, queue))
+#     process3 = multiprocessing.Process(target=counting, args=(1500000, 2000001, queue))
+
+#     process1.start()
+#     process2.start()
+#     process3.start()
+
+#     process1.join()
+#     process2.join()
+#     process3.join()
+
+#     for i in range(queue.qsize()):
+#         my_list.append(queue.get())
+#     print(sum(my_list), 'за', round(time.time() - start, 2), 'c')
+
+
